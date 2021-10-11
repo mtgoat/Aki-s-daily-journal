@@ -1,0 +1,18 @@
+body {
+    background-color: aquamarine;
+}
+.journalbox{
+    display: flex;
+    flex-direction: column;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    border: dotted salmon 3px;
+    margin-left: -40px;
+}
+.listOfOldEntries {
+    display: flex;
+    flex-direction: column;
+  
+}

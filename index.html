@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aki's Daily Journal</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!--use these <head></head>
+    <main></main>
+    <footer></footer>
+
+    
+    
+    <section></section>
+    <article></article>
+    
+    <h2-6>
+    <p></p>
+    <a></a> -->
+<h2>Aki's Daily Journal</h2>
+    <section class="journalbox">
+       <div class="date">
+        <form action="">
+            <fieldset>
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+        </form>
+        </div>
+        <div class="concept">
+            <form action="">
+                <fieldset>
+                    <label for="concenptsCovered">Concenpts Covered</label>
+                    <input type="text" name="concenptsCovered" id="concenptsCovered">
+                </fieldset>
+            </form>
+        </div>
+        <div class="journal entry">
+            <form action="">
+                <fieldset>
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea  name="journalEntry" id="journalEntry"></textarea> 
+                </fieldset>
+            </form>
+        </div>
+        <div class="mood">
+            <form action="">
+                <fieldset>
+                    <label for="mood">Mood for the day</label>
+                  <select id="moodChoises">
+                        <option value="sad">Fair to middling</option>
+                        <option value="sad">Sad</option>
+                        <option value="sad">Mad</option>
+                        <option value="sad">Overwhelmed</option>
+                        <option value="sad">Meh/So so</option>
+                        <option value="sad">Grrrr/frustration</option>
+                 </select>
+                </fieldset>
+            </form>
+            <input type="button" value="Record Journal Entry" style="margin-bottom:50px ;">
+
+        </div>
+    </section>
+    <section class="oldentries">
+        <label for="oldentries"> Old Entries</label>
+            <ul class="listOfOldEntries">
+                <li> entry 1</li>  
+                <li> entry 2</li>
+            </ul>
+         </section>
+</body>
+</html>
