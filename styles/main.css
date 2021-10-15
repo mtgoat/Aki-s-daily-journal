@@ -14,5 +14,39 @@ li {
 .listOfOldEntries {
     display: flex;
     flex-direction: column;
+    width: 200px;
+    height: 50px;
+   
   
 }
+button {
+    margin:20px 0px;
+}
+
+#FairtoMiddling {
+    background-color: rgb(148, 98, 5);
+}
+
+#sad {
+    background-color: rgb(2, 30, 49);
+    color: thistle;
+}
+#mad {
+    background-color: rgb(228, 4, 4);
+}
+
+#overwhelmed {
+    /*this does not work:background-image: url ("images/ow.png");*/
+    background-color: rgb(10, 0, 0);
+    color: thistle;
+} 
+
+#soso {
+    background-color: rgb(2, 75, 20);
+}
+#frustrated {
+    background-color: rgb(50, 14, 14);
+    color: thistle;
+}
+
+/* hoover effect -change color*/

@@ -51,25 +51,27 @@
                 <fieldset>
                     <label for="mood">Mood for the day</label>
                   <select id="moodChoises">
-                        <option value="sad">Fair to middling</option>
-                        <option value="sad">Sad</option>
-                        <option value="sad">Mad</option>
-                        <option value="sad">Overwhelmed</option>
-                        <option value="sad">Meh/So so</option>
-                        <option value="sad">Grrrr/frustration</option>
+                        <option value="Fair to middling" id="FairtoMiddling">Fair to middling</option>
+                        <option value="sad" id="sad">Sad</option>
+                        <option value="Mad" id="mad">Mad</option>
+                        <option value="Overwhelmed" id="overwhelmed">Overwhelmed</option>
+                        <option value="Soso" id="soso">Meh/So so</option>
+                        <option value="frustrated" id="frustrated">Grrrr/frustrated</option>
                  </select>
                 </fieldset>
             </form>
-            <input type="button" value="Record Journal Entry" style="margin-bottom:50px ;">
+            <button type="button">Record Journal Entry</button>
 
         </div>
     </section>
     <section class="oldentries">
         <label for="oldentries"> Old Entries</label>
             <ul class="listOfOldEntries">
-                <li> entry 1</li>  
-                <li> entry 2</li>
+                <li class="listOfOldEntry"> entry 1</li>  
+                <li class="listOfOldEntry"> entry 2</li>
             </ul>
-         </section>
+            <button class="button-edit">Edit</button>
+            <button class="button-delete">Delete</button>
+    </section>
 </body>
 </html>
