@@ -1,25 +1,66 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "10/06/2021",
-            "concept": "HTML & CSS",
-            "logEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-            "mood": "Soso"
-        },    
-        {
-            "id": 2,
-            "date": "10/08/2021",
-            "concept": "DOM and JS",
-            "logEntry": "We talked about DOM and how to update html through JS.",
-            "mood": "Frustrated"
-        },
-        {
-            "id": 3,
-            "date": "10/14/2021",
-            "concept": "JS automation",
-            "logEntry": "We did the book1: chapter 10.  We learned how to automate and post the results in the HTML page.  It is confusing but I will understand it soon.",
-            "mood": "Frustrated"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "10/06/2021",
+      "concept": "HTML & CSS",
+      "logEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Soso"
+    },
+    {
+      "id": 2,
+      "date": "10/08/2021",
+      "concept": "DOM and JS",
+      "logEntry": "We talked about DOM and how to update html through JS.",
+      "mood": "Frustrated"
+    },
+    {
+      "id": 3,
+      "date": "10/14/2021",
+      "concept": "JS automation",
+      "logEntry": "We did the book1: chapter 10.  We learned how to automate and post the results in the HTML page.  It is confusing but I will understand it soon.",
+      "mood": "Frustrated"
+    },
+    {
+      "dateOfNote": "2021-10-26",
+      "concept": "API & JSON",
+      "logEntry": "It is hard to keep track of many export/import functions",
+      "mood": "Fair to middling",
+      "id": 4
+    },
+    {
+      "dateOfNote": "2021-10-26",
+      "concept": "JSON testing",
+      "logEntry": "Testing",
+      "mood": "Overwhelmed",
+      "id": 5
+    },
+    {
+      "date": "2021-11-01",
+      "concept": "Testing",
+      "logEntry": "Testing",
+      "mood": "Fair to middling",
+      "id": 6
+    },
+    {
+      "date": "2021-10-28",
+      "concept": "t",
+      "logEntry": "t",
+      "mood": "Fair to middling",
+      "id": 7
+    },
+    {
+      "concept": "Test",
+      "logEntry": "Test",
+      "mood": "Mad",
+      "id": 8
+    },
+    {
+      "date": "2021-11-04",
+      "concept": "Testing",
+      "logEntry": "Testing",
+      "mood": "Fair to middling",
+      "id": 9
+    }
+  ]
 }
