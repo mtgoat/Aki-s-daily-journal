@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200&display=swap');
+
 body {
-    background-color: aquamarine;
+    /*background-color: rgb(208, 233, 225);*/
+    background-image: url("../images/leonardo-da-vinci-02.jpg") ;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    font-family: spectral, Arial, sans-serif;
+    color: rgb(20, 8, 8);
 }
 .journalbox{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-basis: 200px;
 }
+#journalDate, #concenptsCovered,#journalEntry,#moodChoises,#oldentries {
+     margin-left:2em;
+}
+
 li {
     list-style: none;
     padding: 10px;
@@ -12,10 +26,10 @@ li {
     margin-left: -40px;
 }
 .listOfOldEntries {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+   
+    width: vw;
     height: 50px;
+    margin-bottom: 20px;
    
   
 }
@@ -48,5 +62,13 @@ button {
     background-color: rgb(50, 14, 14);
     color: thistle;
 }
+h2 {
+    text-indent: 1em;
+}
+h4 {
+    display: inline-block;
+}
 
+.journalEntry-date {
+    text-indent: 10px;}
 /* hoover effect -change color*/

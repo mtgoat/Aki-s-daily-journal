@@ -56,7 +56,7 @@
                         <option value="Mad" id="mad">Mad</option>
                         <option value="Overwhelmed" id="overwhelmed">Overwhelmed</option>
                         <option value="Soso" id="soso">Meh/So so</option>
-                        <option value="frustrated" id="frustrated">Grrrr/frustrated</option>
+                        <option value="Frustrated" id="frustrated">Grrrr/Frustrated</option>
                  </select>
                 </fieldset>
             </form>
@@ -64,14 +64,16 @@
 
         </div>
     </section>
-    <section class="oldentries">
-        <label for="oldentries"> Old Entries</label>
+    <section class="oldentries-box">
+        <label for="oldentries" id="oldentries"> Old Entries</label>
             <ul class="listOfOldEntries">
-                <li class="listOfOldEntry"> entry 1</li>  
-                <li class="listOfOldEntry"> entry 2</li>
+                <li id="entryLog"> </li>  
+                <!--<li class="listOfOldEntry"> </li>-->
+                <button class="button-edit">Edit</button>
+                <button class="button-delete">Delete</button>
             </ul>
-            <button class="button-edit">Edit</button>
-            <button class="button-delete">Delete</button>
     </section>
+    <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>
+
