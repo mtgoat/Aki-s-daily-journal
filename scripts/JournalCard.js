@@ -11,7 +11,7 @@ export const journals = (entry) => {
         </h4>
         <div id="entry--logEntry" class="journalEntry">${entry.logEntry}</div>
         <p id="entry--${entry.mood}" class="journalEntry-mood">Mood: ${entry.mood}</p>
-        
+        <button id="deleteJournal--${entry.id}">Delete</button>
         </section>
     `
 }

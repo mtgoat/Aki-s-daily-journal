@@ -28,3 +28,8 @@ export const useJournals = () => {
     return sortedByDate
 }
 
+export const deleteJournal = (journalId) => {
+    return fetch(`http://localhost:8088/entries/${journalId}`, {
+        method: "DELETE"
+    })
+}

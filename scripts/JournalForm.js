@@ -1,4 +1,4 @@
-import { saveJournals } from "./JournalDataProvider.js"
+import { deleteJournal, saveJournals } from "./JournalDataProvider.js"
 import { JournalList } from "./JournalList.js" 
 
 const contentTarget = document.querySelector(".journalbox")
@@ -67,7 +67,23 @@ contentTarget.addEventListener("click", clickEvent => {
         document.querySelector("#journalEntry").value = ""
         document.querySelector("#moodChoises").value = ""
         // Change API state and application state
-        //saveJournals(newJournal)
-        //.then(JournalList) // Refresh your list of notes once you've saved your new one
+        saveJournals(newJournal)
+        .then(JournalList) // Refresh your list of notes once you've saved your new one
     }
 })
+
+const eventHub = document.querySelector("#entryLog")
+eventHub.addEventListener("click", removeEvent => {
+    if (removeEvent.target.id.startsWith("deleteJournal")) {
+      const idToDelete = removeEvent.target.id.split("--")[1]
+      // ---------- Write your code here -------------//
+      // Call the deleteNote function and pass in the appropriate id
+      
+      console.log(idToDelete)
+      deleteJournal (idToDelete)
+      .then(JournalList)
+      // Then call NoteList to refresh the list of notes
+  
+    }
+  });
+  
