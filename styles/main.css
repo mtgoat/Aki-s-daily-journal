@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: right;
     font-family: spectral, Arial, sans-serif;
-    color: rgb(20, 8, 8);
+    color: rgba(7, 9, 122, 0.65);
 }
 .journalbox{
     display: flex;
@@ -19,12 +19,14 @@ body {
      margin-left:2em;
 }
 
-li {
+.old-entries {
     list-style: none;
     padding: 10px;
     border: dotted salmon 3px;
-    margin-left: -40px;
-}
+    margin-top: 40px;
+    width: 80vw;
+    padding:1em;
+} 
 .listOfOldEntries {
    
     width: 80vw;
@@ -32,6 +34,11 @@ li {
     margin-bottom: 20px;
    
   
+}
+fieldset {
+    padding:1em;
+    width: 80vw;
+
 }
 button {
     margin:20px 0px;

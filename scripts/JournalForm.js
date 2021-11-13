@@ -6,41 +6,34 @@ const contentTarget = document.querySelector(".journalbox")
 export const JournalForm = () => {
     contentTarget.innerHTML = `
     <form action="">
-    <fieldset>
-        <label for="journalDate">Date of entry</label>
-        <input type="date" name="journalDate" id="journalDate">
-    </fieldset>
-</form>
-</div>
-<div class="concept">
-    <form action="">
-        <fieldset>
+        <fieldset> 
+        <div class="journal-date">    
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </div>
+
+        <div class="journal-concept">
             <label for="concenptsCovered">Concenpts Covered</label>
             <input type="text" name="concenptsCovered" id="concenptsCovered">
-        </fieldset>
-    </form> 
-</div>
-<div class="journal entry">
-    <form action="">
-        <fieldset>
+        </div>
+
+        <div class="journal-entry">
+    
             <label for="journalEntry">Journal Entry</label>
             <textarea  name="journalEntry" id="journalEntry"></textarea> 
-        </fieldset>
-    </form>
-</div>
-<div class="mood">
-    <form action="">
-        <fieldset>
+        </div>
+
+        <div class="journal-mood">
             <label for="mood">Mood for the day</label>
-          <select id="moodChoises">
+            <select id="moodChoises">
                 <option value="Fair to middling" id="FairtoMiddling">Fair to middling</option>
                 <option value="sad" id="sad">Sad</option>
                 <option value="Mad" id="mad">Mad</option>
                 <option value="Overwhelmed" id="overwhelmed">Overwhelmed</option>
                 <option value="Soso" id="soso">Meh/So so</option>
                 <option value="Frustrated" id="frustrated">Grrrr/Frustrated</option>
-         </select>
-        </fieldset>
+            </select>
+        </div>
     </form>
     <button id="saveJournalEntry">Save Journal Entry</button>
     `
@@ -72,7 +65,9 @@ contentTarget.addEventListener("click", clickEvent => {
     }
 })
 
-const eventHub = document.querySelector("#entryLog")
+
+//this is to delete entry
+const eventHub = document.querySelector(".old-entries")
 eventHub.addEventListener("click", removeEvent => {
     if (removeEvent.target.id.startsWith("deleteJournal")) {
       const idToDelete = removeEvent.target.id.split("--")[1]
