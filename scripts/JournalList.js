@@ -2,7 +2,7 @@ import { journals } from "./JournalCard.js"
 import { useJournals, getJournals, saveJournals } from "./JournalDataProvider.js"
 
 
-const contentTarget = document.querySelector("#entryLog")
+const contentTarget = document.querySelector(".old-entries")
 
 
 export const JournalList = () => {
