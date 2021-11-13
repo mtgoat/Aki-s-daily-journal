@@ -44,6 +44,7 @@ contentTarget.addEventListener("click", (event) => {
         }
 
         // Send to json-server and refresh the list
+        console.log(editedJournal)
         updateJournal(editedJournal).then(JournalList)
 
     }

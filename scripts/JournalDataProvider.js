@@ -40,6 +40,6 @@ export const updateJournal = (journal) => {
         headers: {
             "Content-Type":"application/json"
         },
-        body:JSON.stringify(journals)
+        body:JSON.stringify(journal)
     })
 }

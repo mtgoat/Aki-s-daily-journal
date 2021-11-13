@@ -1,73 +1,15 @@
 {
   "entries": [
     {
-      "0": {
-        "id": 1,
-        "date": "10/06/2021",
-        "concept": "HTML & CSS",
-        "logEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        "mood": "Soso"
-      },
-      "1": {
-        "id": 2,
-        "date": "10/08/2021",
-        "concept": "DOM and JS",
-        "logEntry": "We talked about DOM and how to update html through JS.",
-        "mood": "Frustrated"
-      },
-      "2": {
-        "id": 3,
-        "date": "10/14/2021",
-        "concept": "JS automation",
-        "logEntry": "We did the book1: chapter 10.  We learned how to automate and post the results in the HTML page.  It is confusing but I will understand it soon.",
-        "mood": "Frustrated"
-      },
-      "3": {
-        "dateOfNote": "2021-10-26",
-        "concept": "API & JSON",
-        "logEntry": "It is hard to keep track of many export/import functions",
-        "mood": "Fair to middling",
-        "id": 4
-      },
-      "4": {
-        "dateOfNote": "2021-10-26",
-        "concept": "JSON testing",
-        "logEntry": "Testing",
-        "mood": "Overwhelmed",
-        "id": 5
-      },
-      "5": {
-        "date": "2021-10-28",
-        "concept": "t",
-        "logEntry": "t",
-        "mood": "Fair to middling",
-        "id": 7
-      },
-      "6": {
-        "date": "2021-11-01",
-        "concept": "Testing",
-        "logEntry": "Testing",
-        "mood": "Fair to middling",
-        "id": 6
-      },
-      "7": {
-        "concept": "Test",
-        "logEntry": "Test",
-        "mood": "Mad",
-        "id": 8
-      },
-      "8": {
-        "date": "2021-11-04",
-        "concept": "Testing",
-        "logEntry": "Testing",
-        "mood": "Fair to middling",
-        "id": 9
-      },
-      "id": 1
+      "id": 1,
+      "date": "2021-10-06",
+      "concept": "HTML & CSS",
+      "logEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Soso"
     },
     {
       "id": 2,
-      "date": "10/08/2021",
+      "date": "2021-10-08",
       "concept": "DOM and JS",
       "logEntry": "We talked about DOM and how to update html through JS.",
       "mood": "Frustrated"
@@ -80,45 +22,46 @@
       "mood": "Frustrated"
     },
     {
-      "dateOfNote": "2021-10-26",
+      "id": 4,
+      "date": "2021-10-25",
       "concept": "API & JSON",
       "logEntry": "It is hard to keep track of many export/import functions",
-      "mood": "Fair to middling",
-      "id": 4
+      "mood": "Fair to middling"
     },
     {
-      "dateOfNote": "2021-10-26",
-      "concept": "JSON testing",
-      "logEntry": "Testing",
-      "mood": "Overwhelmed",
-      "id": 5
+      "id": 5,
+      "date": "2021-10-26",
+      "concept": "JSON",
+      "logEntry": "Learning more about JSON.  It seems a lot of information and concenpts.  ",
+      "mood": "Overwhelmed"
     },
     {
-      "date": "2021-11-01",
-      "concept": "Testing",
-      "logEntry": "Testing",
-      "mood": "Fair to middling",
-      "id": 6
+      "id": 6,
+      "date": "2021-10-27",
+      "concept": "JSON",
+      "logEntry": "Tommy's lesson helps a lot, though I should be able to read instructions more carefully.  ",
+      "mood": "Fair to middling"
     },
     {
+      "id": 7,
       "date": "2021-10-28",
-      "concept": "t",
-      "logEntry": "t",
-      "mood": "Fair to middling",
-      "id": 7
+      "concept": "JSON & JS",
+      "logEntry": "Learned select menu fuction,  got to study .map() method",
+      "mood": "Overwhelmed"
     },
     {
-      "concept": "Test",
-      "logEntry": "Test",
-      "mood": "Mad",
-      "id": 8
+      "id": 8,
+      "date": "2021-10-29",
+      "concept": "JSON & JS",
+      "logEntry": "Two sets of dropdown menu and one set of list, solution?  Two parameters with the first = officer for the officer select.  An elegant solution",
+      "mood": "Mad"
     },
     {
-      "date": "2021-11-04",
-      "concept": "Testing",
-      "logEntry": "Testing",
-      "mood": "Fair to middling",
-      "id": 9
+      "id": 9,
+      "date": " ",
+      "concept": " ",
+      "logEntry": " ",
+      "mood": " "
     }
   ]
 }
