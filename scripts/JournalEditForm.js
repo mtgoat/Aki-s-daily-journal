@@ -25,7 +25,7 @@ export const JournalEditForm = (journalId) => {
        
             <label for="mood-select">Choose a mood for the day:</label>
             <select name="moods" id="mood-select">
-                <option value="${journalWeWantToEdit.mood}" id="journal-mood">${journalWeWantToEdit.mood}</option>
+                <option value="${journalWeWantToEdit.mood}" id="display-journal-mood">${journalWeWantToEdit.mood}</option>
                 <option value=""> --To change the mood, choose an mood --</option>
                 <option value="fair" id="journal-mood">Fair to middling</option>
                 <option value="sad" id="journal-mood">Sad</option>
