@@ -24,18 +24,19 @@ export const JournalForm = () => {
         </div>
 
         <div class="journal-mood">
-            <label for="mood">Mood for the day</label>
-            <select id="moodChoises">
-                <option value="Fair to middling" id="FairtoMiddling">Fair to middling</option>
+            <label for="mood-select">Choose a mood for the day:</label>
+            <select name="moods" id="mood-select">
+                <option value=""> --Please choose an mood --</option>
+                <option value="fair" id="fair">Fair to middling</option>
                 <option value="sad" id="sad">Sad</option>
-                <option value="Mad" id="mad">Mad</option>
-                <option value="Overwhelmed" id="overwhelmed">Overwhelmed</option>
+                <option value="mad" id="mad">Mad</option>
+                <option value="overwhelmed" id="overwhelmed">Overwhelmed</option>
                 <option value="Soso" id="soso">Meh/So so</option>
-                <option value="Frustrated" id="frustrated">Grrrr/Frustrated</option>
+                <option value="frustrated" id="frustrated">Grrrr/Frustrated</option>
             </select>
         </div>
     </form>
-    <button id="saveJournalEntry">Save Journal Entry</button>
+    <button id="saveJournalEntry" type="submit" >Save Journal Entry</button>
     `
 }
 
@@ -50,16 +51,17 @@ contentTarget.addEventListener("click", clickEvent => {
             date: document.querySelector("#journalDate").value,
             concept: document.querySelector("#concenptsCovered").value,
             logEntry: document.querySelector("#journalEntry").value,
-            mood: document.querySelector("#moodChoises").value
+            mood: document.querySelector("#mood-select").value
         }
-
+        
         console.dir(newJournal)
         //below clears the input field after the save button is pushed
         document.querySelector("#journalDate").value = ""
         document.querySelector("#concenptsCovered").value = ""
         document.querySelector("#journalEntry").value = ""
-        document.querySelector("#moodChoises").value = ""
+        document.querySelector("#mood-select").value = ""
         // Change API state and application state
+       
         saveJournals(newJournal)
         .then(JournalList) // Refresh your list of notes once you've saved your new one
     }

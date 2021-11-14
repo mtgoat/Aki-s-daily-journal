@@ -23,7 +23,18 @@ export const JournalEditForm = (journalId) => {
 
             <input type="text" value="${journalWeWantToEdit.logEntry}" id="journal-entry" />
        
-            <input type="text" value="${journalWeWantToEdit.mood}" id="journal-mood" />
+            <label for="mood-select">Choose a mood for the day:</label>
+            <select name="moods" id="mood-select">
+                <option value="${journalWeWantToEdit.mood}" id="journal-mood">${journalWeWantToEdit.mood}</option>
+                <option value=""> --To change the mood, choose an mood --</option>
+                <option value="fair" id="journal-mood">Fair to middling</option>
+                <option value="sad" id="journal-mood">Sad</option>
+                <option value="mad" id="journal-mood">Mad</option>
+                <option value="overwhelmed" id="journal-mood">Overwhelmed</option>
+                <option value="Soso" id="journal-mood">Meh/So so</option>
+                <option value="frustrated" id="journal-mood">Grrrr/Frustrated</option>
+            </select>
+            
         <button id="saveJournalChanges-${journalId}">Save Changes</button>
     `
 }

@@ -45,29 +45,29 @@ button {
 }
 
 #FairtoMiddling {
-    background-color: rgb(148, 98, 5);
+    /* background-color: rgb(148, 98, 5); */
 }
 
 #sad {
-    background-color: rgb(2, 30, 49);
-    color: thistle;
+    /* background-color: rgb(2, 30, 49);
+    color: thistle; */
 }
 #mad {
-    background-color: rgb(228, 4, 4);
-}
-
+    /* background-color: rgb(228, 4, 4);
+*/
+} 
 #overwhelmed {
     /*this does not work:background-image: url ("images/ow.png");*/
-    background-color: rgb(10, 0, 0);
-    color: thistle;
+    /* background-color: rgb(10, 0, 0);
+    color: thistle; */
 } 
 
 #soso {
-    background-color: rgb(2, 75, 20);
+    /* background-color: rgb(2, 75, 20); */
 }
 #frustrated {
-    background-color: rgb(50, 14, 14);
-    color: thistle;
+    /* background-color: rgb(50, 14, 14);
+    color: thistle; */
 }
 h2 {
     text-indent: 1em;
