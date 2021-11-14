@@ -51,7 +51,7 @@ contentTarget.addEventListener("click", (event) => {
             date:document.querySelector("#journal-date").value,
             concept:document.querySelector("#journal-concept").value,
             logEntry: document.querySelector("#journal-entry").value,
-            mood: document.querySelector("#journal-mood").value
+            mood: document.querySelector("#mood-select").value
         }
 
         // Send to json-server and refresh the list

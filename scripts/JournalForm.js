@@ -44,6 +44,7 @@ export const JournalForm = () => {
 
 contentTarget.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveJournalEntry") {
+       clickEvent.preventDefault()//without this, I will get typeError when attempting to fetch the source
         
         // Make a new object representation of a note
         const newJournal = {
