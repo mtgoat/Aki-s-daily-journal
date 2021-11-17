@@ -5,70 +5,103 @@
       "date": "2021-10-06",
       "concept": "HTML & CSS",
       "logEntry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Soso"
+      "moodId": 5
     },
     {
       "id": 2,
       "date": "2021-10-08",
       "concept": "DOM and JS",
       "logEntry": "We talked about DOM and how to update html through JS.",
-      "mood": "Frustrated"
+      "moodId": 6
     },
     {
       "id": 3,
       "date": "10/14/2021",
       "concept": "JS automation",
       "logEntry": "We did the book1: chapter 10.  We learned how to automate and post the results in the HTML page.  It is confusing but I will understand it soon.",
-      "mood": "Frustrated"
+      "moodId": 6
     },
     {
       "id": 4,
       "date": "2021-10-25",
       "concept": "API & JSON",
       "logEntry": "It is hard to keep track of many export/import functions",
-      "mood": "Fair to middling"
+      "moodId": 1
     },
     {
       "id": 5,
       "date": "2021-10-26",
       "concept": "JSON",
       "logEntry": "Learning more about JSON.  It seems a lot of information and concenpts.  ",
-      "mood": "Overwhelmed"
+      "moodId": 4
     },
     {
       "id": 6,
       "date": "2021-10-27",
       "concept": "JSON",
       "logEntry": "Tommy's lesson helps a lot, though I should be able to read instructions more carefully.  ",
-      "mood": "Fair to middling"
+      "moodId": 1
     },
     {
       "id": 7,
       "date": "2021-10-28",
       "concept": "JSON & JS",
       "logEntry": "Learned select menu fuction,  got to study .map() method",
-      "mood": "Overwhelmed"
+      "moodId": 4
     },
     {
       "id": 8,
       "date": "2021-10-29",
       "concept": "JSON & JS",
       "logEntry": "Two sets of dropdown menu and one set of list, solution?  Two parameters with the first = officer for the officer select.  An elegant solution",
-      "mood": "Mad"
+      "moodId": 3
     },
     {
       "id": 9,
       "date": "2021-11-03 ",
       "concept": "JSON & JS",
       "logEntry": "Testing ",
-      "mood": "Mad"
+      "moodId": 3
     },
     {
       "id": 10,
-      "date": "2021-11-14",
+      "date": "2021-11-12",
       "concept": "JSON & JS",
-      "logEntry": "Testing",
-      "mood": "mad"
+      "logEntry": "Getting confused with so many functions in different js files and harder to keep track ",
+      "mood": "Frustrated"
+    },
+    {
+      "id": 11,
+      "date": "2021-11-15",
+      "concept": "JSON & JS & Different DBs",
+      "logEntry": "Worked with Heaven and Brandi all day yesterday to figure out how to access to two different database and incoperate the principal to the glassdale.  It did not go too far",
+      "moodId": 6
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Fair to middling"
+    },
+    {
+      "id": 2,
+      "label": "Sad/Defeated/dejected"
+    },
+    {
+      "id": 3,
+      "label": "Mad"
+    },
+    {
+      "id": 4,
+      "label": "Overwhelmed"
+    },
+    {
+      "id": 5,
+      "label": "Soso"
+    },
+    {
+      "id": 6,
+      "label": "Frustrated"
     }
   ]
 }

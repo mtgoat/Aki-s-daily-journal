@@ -1,4 +1,4 @@
-import {useJournals, updateJournal} from "./JournalDataProvider.js"
+import {useJournals, updateJournal, useMoods, getMoods} from "./JournalDataProvider.js"
 import {JournalList} from "./JournalList.js"
 
 
@@ -6,6 +6,8 @@ import {JournalList} from "./JournalList.js"
 const contentTarget = document.querySelector(".journalbox")
 
 export const JournalEditForm = (journalId) => {
+    getMoods()
+    .then (()=> {
     // Give this component access to our application's notes state
     const allJournals = useJournals();
 
@@ -13,6 +15,7 @@ export const JournalEditForm = (journalId) => {
     
     const journalWeWantToEdit = allJournals.find(singleJournal => singleJournal.id === journalId)
     
+    const moodsArray = useMoods()
     // Print the form
     // We'll use the HTML value attribute to pre-populate our form fields with the note's info
     contentTarget.innerHTML = `
@@ -25,20 +28,16 @@ export const JournalEditForm = (journalId) => {
        
             <label for="mood-select">Choose a mood for the day:</label>
             <select name="moods" id="mood-select">
-                <option value="${journalWeWantToEdit.mood}" id="display-journal-mood">${journalWeWantToEdit.mood}</option>
-                <option value=""> --To change the mood, choose an mood --</option>
-                <option value="fair" id="journal-mood">Fair to middling</option>
-                <option value="sad" id="journal-mood">Sad</option>
-                <option value="mad" id="journal-mood">Mad</option>
-                <option value="overwhelmed" id="journal-mood">Overwhelmed</option>
-                <option value="Soso" id="journal-mood">Meh/So so</option>
-                <option value="frustrated" id="journal-mood">Grrrr/Frustrated</option>
-            </select>
+                ${moodsArray.map(singleObject => singleObject.id === journalWeWantToEdit.mood.id ? ` <option selected id="display-journal-mood--${singleObject.id}" value="${singleObject.label}">${singleObject.label}</option>
+                `: `<option id="display-journal-mood__${singleObject.id}" value="${singleObject.label}">${singleObject.label}</option>`
+                            
+           
+            ).join("")}
             
-        <button id="saveJournalChanges-${journalId}">Save Changes</button>
+            </select><button id="saveJournalChanges-${journalId}">Save Changes</button>
     `
+   })
 }
-
 
 //this is to save the edited information to the database
 
@@ -47,7 +46,7 @@ contentTarget.addEventListener("click", (event) => {
 
         // Make a new object representation of a note
         const editedJournal = {
-            id: event.target.id.split("-")[1],
+            id: +event.target.id.split("-")[1],
             date:document.querySelector("#journal-date").value,
             concept:document.querySelector("#journal-concept").value,
             logEntry: document.querySelector("#journal-entry").value,

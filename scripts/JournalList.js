@@ -1,5 +1,6 @@
 import { journals } from "./JournalCard.js"
-import { useJournals, getJournals, saveJournals } from "./JournalDataProvider.js"
+import { useJournals, getJournals, saveJournals, useMoods, getMoods } from "./JournalDataProvider.js"
+import { JournalEditForm } from "./JournalEditForm.js"
 
 
 const contentTarget = document.querySelector(".old-entries")
@@ -7,14 +8,19 @@ const contentTarget = document.querySelector(".old-entries")
 
 export const JournalList = () => {
     getJournals ()
+    .then(getMoods)
     .then(() => {
+        
     let journalsArray = useJournals()
+    let moodsArray = useMoods() 
 
     let journalHTMLRepresentations = " ";
     
     journalsArray.forEach((singleEntryObject) => {
-       
-       journalHTMLRepresentations += journals(singleEntryObject);
+        
+       let singleMood = moodsArray.find( singleMoodObject => singleEntryObject.moodId === singleMoodObject.id)
+       //debugger
+       journalHTMLRepresentations += journals(singleEntryObject, singleMood);
     });
 
     contentTarget.innerHTML += `
