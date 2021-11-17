@@ -12,14 +12,15 @@ export const JournalList = () => {
     .then(() => {
         
     let journalsArray = useJournals()
-    let moodsArray = useMoods() 
+    let emotionsArray = useMoods() 
 
     let journalHTMLRepresentations = " ";
     
     journalsArray.forEach((singleEntryObject) => {
         
-       let singleMood = moodsArray.find( singleMoodObject => singleEntryObject.moodId === singleMoodObject.id)
-       //debugger
+       let singleMood = emotionsArray.find( singleMoodObject => singleEntryObject.moodId === singleMoodObject.id)
+       
+       debugger
        journalHTMLRepresentations += journals(singleEntryObject, singleMood);
     });
 
